@@ -1,0 +1,14 @@
+.quizContainer {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.header {
+    justify-content: space-evenly;
+    font: 25px Arial, sans-serif;
+    font-weight: 700;
+    margin-top: 45px;
+    margin-bottom: 5px;
+    /* padding: 15px; */
+}

@@ -1,0 +1,30 @@
+.reviewContainer {
+    border: 2px solid black;
+    width: 20vw;
+    padding-top: 5%;
+    height: 50vh;
+    margin-right: 5%;
+    box-shadow: 5px 10px #888888;
+    border-radius: 8px;
+}
+
+.reviewText {
+    display: flex;
+    justify-content: space-evenly;
+    font: 15px Arial, sans-serif;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 15px;
+}
+
+.revAnsList {
+    display: flex;
+    justify-content: center;
+}
+
+.reviewAnswerTag {
+    /* font: 15px Arial, sans-serif; */
+    font-weight: 700;
+
+}

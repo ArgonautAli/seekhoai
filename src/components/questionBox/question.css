@@ -1,0 +1,45 @@
+.questionContainer {
+    border: 2px solid black;
+    width: 40vw;
+    padding-top: 5%;
+    box-shadow: 5px 10px #888888;
+    height: 50vh;
+    min-height: fit-content;
+    border-radius: 8px;
+}
+
+.questionText {
+    display: flex;
+    justify-content: space-evenly;
+    font: 15px Arial, sans-serif;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 15px;
+}
+
+.answersText {
+    margin-top: 10px;
+    font: 15px Arial, sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+
+}
+
+.answerContainer {
+    margin-left: 10px;
+    display: flex;
+}
+
+.indAnswersText {
+    /* padding: 5px; */
+    margin: 3px;
+}
+
+.arrowRotate {
+
+    -webkit-transform: rotateX(180deg);
+    transform: rotate(180deg);
+}

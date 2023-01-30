@@ -1,0 +1,23 @@
+.resultContainer {
+    height: 50vh;
+    width: 50vw;
+    padding: 5%;
+    margin-top: 5%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    box-shadow: 5px 10px #888888;
+    border-radius: 8px;
+}
+
+.resultData {
+    margin: 10px;
+}
+
+.resultText {
+    justify-content: space-evenly;
+    font: 15px Arial, sans-serif;
+    font-weight: 700;
+    margin: 8px;
+}
