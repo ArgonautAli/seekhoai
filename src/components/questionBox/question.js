@@ -15,7 +15,6 @@ function QuestionBox() {
   const [selectedAnswer, setSelectedAnswer] = useState();
   const [correctAnswer, setCorrectAnswer] = useState();
   const [answerIndex, setAnswerIndex] = useState();
-  const [answerDispatched, setAnswerDispatched] = useState(false);
   const redArray = useSelector((state) => state.addAnswerObj);
   const navigate = useNavigate();
 
@@ -28,7 +27,6 @@ function QuestionBox() {
       const preExistingAnswer = res.payload.ans.action.questionId;
       if (preExistingAnswer === index) {
         const objToRemove = res.payload.ans.action;
-        console.log("obj to rem", objToRemove);
         return dispatch(removeAnswer({ type: "REM_ANSWER", objToRemove }));
       }
     });
