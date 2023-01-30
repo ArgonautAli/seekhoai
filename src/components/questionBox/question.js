@@ -23,19 +23,6 @@ function QuestionBox() {
     setQuestionsListed(QuestionList);
   }, []);
 
-  console.log(" red", redArray);
-
-  // useEffect(() => {
-  //   redArray.map((res) => {
-  //     const preExistingAnswer = res.payload.ans.action.questionId;
-  //     if (preExistingAnswer === index) {
-  //       const objToRemove = res.payload.ans.action;
-  //       console.log("obj to rem", objToRemove);
-  //       return dispatch(removeAnswer({ type: "REM_ANSWER", objToRemove }));
-  //     }
-  //   });
-  // }, [index, selectedAnswer]);
-
   function removeAnswerHandler() {
     redArray?.map((res) => {
       const preExistingAnswer = res.payload.ans.action.questionId;
@@ -61,26 +48,6 @@ function QuestionBox() {
     };
 
     dispatch(addAnswer({ type: "ADD_ANSWER", action: body }));
-
-    // redArray.map((res) => {
-    //   console.log("mapping");
-    //   const preExistingAnswer = res.payload.ans.action.questionId;
-    //   if (preExistingAnswer !== index) {
-    // return console.log("already exists!");
-    // const body = {
-    //   selectedAnswer: item.answerText,
-    //   correctAnswer: item.correctAnswer,
-    //   answerIndex: item.answerIndex,
-    //   questionId: index,
-    // };
-
-    //   return dispatch(addAnswer({ type: "ADD_ANSWER", action: body }));
-    // } else if (preExistingAnswer === index) {
-    //   const objToRemove = res.payload.ans.action;
-    //   console.log("obj to rem", objToRemove);
-    //   return dispatch(removeAnswer({ type: "REM_ANSWER", objToRemove }));
-    // }
-    // });
   }
 
   function indexHandler(placement) {

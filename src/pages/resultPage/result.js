@@ -19,9 +19,7 @@ function Result() {
   }
 
   function resultHandler() {
-    console.log("result", redArray);
     const correctAnswersArr = redArray.filter(answerChecker);
-    console.log("correct ans", correctAnswersArr);
     setCorrectAnswer(correctAnswersArr);
     setMarksScored(correctAnswersArr.length * 33);
   }
