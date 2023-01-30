@@ -7,10 +7,12 @@ function Quiz() {
   return (
     <>
       <div className="header">
-        <QAIcon /> QA Assessment by &nbsp;
+        <QAIcon />
+        QA Assessment by &nbsp;
         <a href="https://alihaiderkhan.com" target="_blank" rel="noreferrer">
           Ali Haider Khan
-        </a>
+        </a>{" "}
+        &nbsp;for Frontend SDE Position
       </div>
       <div className="quizContainer">
         <ReviewBox />
